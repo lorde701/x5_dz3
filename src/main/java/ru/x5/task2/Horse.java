@@ -1,17 +1,22 @@
 package ru.x5.task2;
 
 class Horse extends Animal {
-    int maneLength;
+    private int maneLength;
 
-    Horse(String food, String location) {
+    public Horse(String food, String location) {
         super(food, location);
     }
 
-    void makeNoise() {
+    public Horse(String food, String location, int maneLength) {
+        super(food, location);
+        this.maneLength = maneLength;
+    }
+
+    public void makeNoise() {
         System.out.println("Фр-Фр");
     }
 
-    void sleep() {
+    public void sleep() {
         System.out.println("Лошадь спит");
     }
 }

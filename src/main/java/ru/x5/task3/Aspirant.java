@@ -7,8 +7,8 @@ public class Aspirant extends Student {
     }
 
     @Override
-    int getScholarship() {
-        if (averageMark == 5) {
+    public int getScholarship() {
+        if (getAverageMark() == 5) {
             return 200;
         } else {
             return 180;

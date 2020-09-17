@@ -1,19 +1,27 @@
 package ru.x5.task2;
 
 abstract class Animal {
-    String food;
-    String location;
+    private String food;
+    private String location;
 
-    Animal(String food, String location) {
+    public Animal(String food, String location) {
         this.food = food;
         this.location = location;
     }
 
-    abstract void makeNoise();
+    public String getFood() {
+        return food;
+    }
 
-    void eat() {
+    public String getLocation() {
+        return location;
+    }
+
+    public abstract void makeNoise();
+
+    public void eat() {
         System.out.println("Животное кушает " + food);
     }
 
-    abstract void sleep();
+    public abstract void sleep();
 }

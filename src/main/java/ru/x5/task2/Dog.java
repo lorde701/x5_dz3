@@ -1,17 +1,22 @@
 package ru.x5.task2;
 
 class Dog extends Animal {
-    boolean isGoodScent;
+    private boolean isGoodScent;
 
-    Dog(String food, String location) {
+    public Dog(String food, String location) {
         super(food, location);
     }
 
-    void makeNoise() {
+    public Dog(String food, String location, boolean isGoodScent) {
+        super(food, location);
+        this.isGoodScent = isGoodScent;
+    }
+
+    public void makeNoise() {
         System.out.println("Гав");
     }
 
-    void sleep() {
+    public void sleep() {
         System.out.println("Собака спит");
     }
 }

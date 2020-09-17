@@ -12,7 +12,7 @@ public class Main {
         };
         for (Student student : array) {
             System.out.println(String.format("%s %s получает степендию: %s",
-                    student.lastName, student.firstName, student.getScholarship()));
+                    student.getLastName(), student.getFirstName(), student.getScholarship()));
         }
     }
 }

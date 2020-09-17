@@ -1,17 +1,22 @@
 package ru.x5.task2;
 
 class Cat extends Animal {
-    boolean canCatchMouse;
+    private boolean canCatchMouse;
 
-    Cat(String food, String location) {
+    public Cat(String food, String location) {
         super(food, location);
     }
 
-    void makeNoise() {
+    public Cat(String food, String location, boolean canCatchMouse) {
+        super(food, location);
+        this.canCatchMouse = canCatchMouse;
+    }
+
+    public void makeNoise() {
         System.out.println("Мяу");
     }
 
-    void sleep() {
+    public void sleep() {
         System.out.println("Кошка спит");
     }
 }

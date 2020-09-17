@@ -2,44 +2,44 @@ package ru.x5.task1;
 
 import java.util.Arrays;
 
-class Phone {
+public class Phone {
     private String number;
     private String model;
     private float weight;
 
-    Phone() {}
+    public Phone() {}
 
-    private Phone(String number, String model) {
+    public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
 
-    Phone(String number, String model, float weight) {
+    public Phone(String number, String model, float weight) {
         this(number, model);
         this.weight = weight;
     }
 
-    void receiveCall(String name) {
+    public void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
 
-    void receiveCall(String name, String number) {
+    public void receiveCall(String name, String number) {
         System.out.println(String.format("Звонит %s с номера %s", name, number));
     }
 
-    void sendMessage(String... numbers) {
+    public void sendMessage(String... numbers) {
         System.out.println("Отправляются сообщения на номера " + Arrays.toString(numbers));
     }
 
-    String getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    String getModel() {
+    public String getModel() {
         return model;
     }
 
-    float getWeight() {
+    public float getWeight() {
         return weight;
     }
 }
