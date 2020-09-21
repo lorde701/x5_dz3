@@ -1,6 +1,6 @@
 package ru.x5.task2;
 
-class Cat extends Animal {
+public class Cat extends Animal {
     private boolean canCatchMouse;
 
     public Cat(String food, String location) {

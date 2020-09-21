@@ -1,6 +1,6 @@
 package ru.x5.task2;
 
-class Horse extends Animal {
+public class Horse extends Animal {
     private int maneLength;
 
     public Horse(String food, String location) {

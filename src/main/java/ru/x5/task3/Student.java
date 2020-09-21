@@ -1,10 +1,10 @@
 package ru.x5.task3;
 
-class Student {
+public class Student {
     private String firstName;
     private String lastName;
     private String group;
-    private float averageMark;
+    protected float averageMark;
 
     public Student(String firstName, String lastName, String group, float averageMark) {
         this.firstName = firstName;
@@ -23,10 +23,6 @@ class Student {
 
     public String getGroup() {
         return group;
-    }
-
-    public float getAverageMark() {
-        return averageMark;
     }
 
     public int getScholarship() {
